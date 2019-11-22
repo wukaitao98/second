@@ -9,12 +9,12 @@ layout: base
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
                 {% for post in site.posts%}
-                <div class="tm-blog-post">
+                <a href="{{post.url}}"><div class="tm-blog-post">
                     <h3 class="tm-gold-text">{{post.title}}</h3>
                     <p>{{post.subheading}}</p>
-                    <img src="img/tm-img-1010x336-1.jpg" alt="Image" class="img-fluid tm-img-post">
+                    <img src="{{site.baseurl}}img/tm-img-1010x336-1.jpg" alt="Image" class="img-fluid tm-img-post">
                     <p>{{post.text}}</p>
-                </div>
+                </div></a>
                 {% endfor %}
                 <div class="row tm-margin-t-big">
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
